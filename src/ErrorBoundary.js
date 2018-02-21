@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ErrorMessage from './images/error_message.gif'
 
-export default class ListErrorBoundary extends Component {
+export default class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
     this.state = { hasError: false };
