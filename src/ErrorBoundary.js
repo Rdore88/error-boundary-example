@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ErrorMessage from './images/error_message.gif'
+import ErrorMessage from './images/error_message.gif';
 
 export default class ErrorBoundary extends Component {
   constructor(props) {

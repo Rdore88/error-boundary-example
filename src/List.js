@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ErrorBoundary from './ErrorBoundary';
 import listData from './ListData';
 import ListItem from './ListItem';
+import ErrorBoundary from './ErrorBoundary';
 
 export default class List extends Component {
   render(){
