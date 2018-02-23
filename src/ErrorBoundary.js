@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ErrorMessage from './images/error_message.gif';
+import ErrorMessageImage from './images/error_message.gif';
 
 export default class ErrorBoundary extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export default class ErrorBoundary extends Component {
 
   render(){
     if (this.state.hasError) {
-      return <li className="list-error-item"><img className="error-image" src={ErrorMessage} alt="Error" /></li>
+      return <li className="list-error-item"><img className="error-image" src={ErrorMessageImage} alt="Error" /></li>
     }
     return this.props.children
   }
