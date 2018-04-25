@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import ErrorMessageImage from './images/error_message.gif';
 
 export default class ErrorBoundary extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { hasError: false };
-  }
+    state = { hasError: false };
 
   componentDidCatch(error, info) {
     this.setState({ hasError: true })
