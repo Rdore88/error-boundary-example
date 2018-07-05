@@ -9,7 +9,7 @@ export default class List extends Component {
       <div className="wrapper">
         <ul className="list">
           {listData.map(item => (
-            <ErrorBoundary>
+            <ErrorBoundary key={item.id}>
               <ListItem data={item} />
             </ErrorBoundary>
           ))}
