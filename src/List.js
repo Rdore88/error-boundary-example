@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import listData from './ListData';
 import ListItem from './ListItem';
-import ErrorBoundary from './ErrorBoundary';
 
 export default class List extends Component {
   render(){
@@ -9,9 +8,7 @@ export default class List extends Component {
       <div className="wrapper">
         <ul className="list">
           {listData.map(item => (
-            <ErrorBoundary key={item.id}>
               <ListItem data={item} />
-            </ErrorBoundary>
           ))}
         </ul>
       </div>
